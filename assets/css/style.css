@@ -1,0 +1,658 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  position: relative;
+  background: #000;
+}
+
+.logo-wrap{
+	width: 100%;
+	min-height: 40%;
+}
+
+#sideNav {
+  background: /*#041230*/#000000;
+}
+
+#about,
+#portfolio,
+#tattooshop,
+#affiliations{
+	background: url("../img/herobanner1.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+#contacts{
+	background: url("../img/herobanner1.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 60vh;
+	width: 100%;
+}
+
+.hero-banner1{
+	background: 
+		/*linear-gradient(
+			to bottom,
+			rgba(0,0,0,0.80),
+			rgba(0,0,0,0.80)),*/
+		url("../img/herobanner1.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+ 
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+	color: #c71f1f;
+}
+
+/* The animation code */
+@keyframes circbann {
+  50% {
+    background-color: #000;
+  }
+}
+
+#circle-banner1{
+	border: 5px solid #000;
+	box-shadow: 5px 5px 5px 5px #fff;
+	border-radius: 50%;
+	height: 350px;
+	width: 350px;
+	margin-left: 32%;
+	background: url("../img/logo2.png");
+	background-size: cover;
+	background-color: #ccc;
+	animation: circbann 1s infinite;
+}
+
+#about-banner1{
+	background: url("../img/Red_Emerald_Galaxy.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 520px;
+	width: 100%;
+}
+
+.heading-ones{
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    letter-spacing: 6px;
+    background: 
+    	linear-gradient(
+		to right,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0.15));
+	text-shadow: 3px 3px #242222;
+}
+
+/* The animation code */
+@keyframes scrollbtn {
+  50% {
+    opacity: 0;
+  }
+}
+
+#scrollbtn{
+	margin-left: 47%;
+	margin-top: 13%;
+	font-size: 3em;
+	animation: scrollbtn 1s linear infinite;
+}
+
+#scrollbtn a{
+	font-family: "Montserrat";
+	text-decoration: none;
+	color: #fff;
+}
+
+#scrollbtn a:hover{
+	color: #c71f1f;
+	text-decoration: underline;
+}
+
+/*================PORTFOLIO PAGE================*/
+
+#p_about{
+	text-align: justify;
+	color: #fff;
+	font-family: "Montserrat";
+	font-size: 1.2rem;
+}
+
+#portf_imgholder1,
+#portf_imgholder2,
+#portf_imgholder3,
+#portf_imgholder4,
+#portf_imgholder5,
+#seemore1{
+	height: 250px;
+	width: 32%;
+	margin-left: 1%;
+}
+
+#portf_imgholder1{
+	background: url("../img/portfolios/1.jpg");
+	background-size: cover;
+}
+
+#portf_imgholder2{
+	background: url("../img/portfolios/2.jpg");
+	background-size: cover;
+}
+
+#portf_imgholder3{
+	background: url("../img/portfolios/3.jpg");
+	background-size: cover;
+	margin-right: 1%;
+}
+
+#portf_imgholder4{
+	background: url("../img/portfolios/4.jpg");
+	background-size: cover;
+	margin-top: 1%;
+}
+
+#portf_imgholder5{
+	background: url("../img/portfolios/5.jpg");
+	background-size: cover;
+	margin-top: 1%;
+}
+
+#seemore1{
+	margin-top: 1%;
+}
+
+.heading-ones a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.heading-ones a:hover{
+	color: #c71f1f;
+}
+
+#ho_margin{
+	margin-top: 30%;
+}
+
+/*================TATTOO SHOP PAGE================*/
+
+#tatshop_imgholder1{
+	background: url("../img/tattoo/Emerald Logo_509X350px.png");
+	background-size: cover;
+	height: 350px;
+	width: 509px;
+	margin-left: 20px;
+}
+
+#tatshop_imgholder2{
+	background: url("../img/tattoo/Union Logo_341X350px.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 341px;
+	margin-left: 100px;
+}
+
+.tats_anchor{
+	color: #fff;
+	font-size: 2.5rem;
+}
+
+.tats_anchor:hover{
+	color: #c71f1f;
+	text-decoration: none;
+}
+
+/*=========================CONTACT===================*/
+
+#cont_banner1,
+#cont_banner2,
+#cont_banner3{
+	float: left;
+	width: 25%;
+	height: 200px;
+	margin-left: 3%;
+	margin-right: 5.3%; 
+}
+
+.fa-phone-square,
+.fa-facebook-square,
+.fa-envelope-open-text{
+	font-size: 10rem;
+	padding-top: 15px;
+	color: #fff;
+}
+
+#cont_p1{
+	margin-top: -120px;
+	font-size: 2rem;
+	color: #000;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#cont_banner1:hover{
+	visibility: hidden;
+}
+
+#cont_banner1:hover #cont_p1{
+	visibility: visible;
+}
+
+.fa-envelope-open-text:hover{
+	color: #D44638;
+}
+
+.fa-facebook-square:hover{
+	color: #3b5998;
+}
+
+
+/*=========================AFFILIATIONS===================*/
+
+
+
+
+
+/*=========================FOOTER=========================*/
+
+footer{
+	background: #000;
+	margin: 0;
+	padding-top: 20px;
+}
+
+
+
+/*==================DESKTOP SETTINGS=======================*/
+@media (min-width: 992px) {
+	#sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh;
+	}
+
+	#sideNav .navbar-collapse {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-flex: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+	width: 100%;
+	margin-bottom: auto;
+	}
+
+	#sideNav .navbar-collapse .navbar-nav {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	}
+
+	#sideNav .navbar-collapse .navbar-nav .nav-item {
+	display: block;
+	}
+
+	#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+	display: block;
+	}
+
+	.logo-wrap{
+		padding-top: 20%;
+	}
+
+	.rightpart{
+		width: 100%;
+	    height: auto;
+	    float: left;
+	    padding-left: 20rem;
+	}
+
+}
+
+/*==================MOBILE SETTINGS=======================*/
+@media screen and (max-width: 800px){
+
+	body{
+		margin-top: 174px;
+	}
+
+	.logo-wrap{
+		width: 50%;
+	}
+
+	#circle-banner1{
+		border: 5px solid #000;
+		box-shadow: 6px 6px 6px 6px #fff;
+		border-radius: 50%;
+		height: 350px;
+		width: 350px;
+		margin-left: 29%;
+		margin-top: 10%;
+	}
+
+	#about{
+		height: 100vh;
+	}
+
+	#p_about{
+		text-align: justify;
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 1.2rem;
+		visibility: visible;
+	}
+
+	#about-banner1{
+		visibility: hidden;
+	}
+
+	#scrollbtn{
+		margin-left: 47%;
+		margin-top: 25%;
+	}
+
+	#tatshop_imgholder1{
+		background: url("../img/tattoo/Emerald Logo_509X350px.png");
+		background-size: cover;
+		height: 264px;
+		width: 50%;
+		margin-left: 0;
+	}
+
+	#tatshop_imgholder2{
+		background: url("../img/tattoo/Union Logo_341X350px.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 394px;
+		width: 50%;
+		margin-left: 0;
+	}
+
+	.tats_anchor{
+		color: #fff;
+		font-size: 1.5rem;
+	}
+
+}
+
+/*==================MOBILE SETTINGS=======================*/
+@media screen and (max-width: 420px){
+
+	.logo-wrap{
+		width: 260px;
+	}
+
+	#circle-banner1{
+		border: 5px solid #000;
+		box-shadow: 6px 6px 6px 6px #fff;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		margin-left: 23%;
+		margin-top: 50%;
+	}
+
+	#about,
+	#portfolio,
+	#tattooshop,
+	#contacts,
+	#affiliations{
+		height: 80vh;
+	}
+
+	#about-banner1{
+		height: 35vh;
+	}
+
+	#p_about{
+		text-align: justify;
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 0.7rem;
+		visibility: visible;
+	}
+
+	#about-banner1{
+		visibility: hidden;
+	}
+
+	.heading-ones{
+		letter-spacing: 3px;
+		font-size: 2rem;
+	}
+
+	#portf_imgholder1,
+	#portf_imgholder2,
+	#portf_imgholder3,
+	#portf_imgholder4,
+	#portf_imgholder5,
+	#seemore1{
+		height: 150px;
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	#tatshop_imgholder1{
+		background: url("../img/tattoo/Emerald Logo_509X350px.png");
+		background-size: cover;
+		height: 141px;
+		width: 50%;
+	}
+
+	#tatshop_imgholder2{
+		background: url("../img/tattoo/Union Logo_341X350px.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 211px;
+		width: 50%;
+	}
+
+	#cont_banner1,
+	#cont_banner2,
+	#cont_banner3{
+		float: left;
+		width: 30%;
+		height: 150px; 
+		margin: 0 5px 0 5px;
+	}
+
+	#contacts{
+		height: 50vh;
+	}
+
+	.fa-phone-square,
+	.fa-facebook-square,
+	.fa-envelope-open-text{
+		font-size: 5rem;
+		padding-top: 15px;
+		color: #fff;
+	}
+
+}
+
+
+@media screen and (max-width: 375px){
+
+	#tatshop_imgholder1{
+		background: url("../img/tattoo/Emerald Logo_509X350px.png");
+		background-size: cover;
+		height: 129px;
+		width: 50%;
+	}
+
+	#tatshop_imgholder2{
+		background: url("../img/tattoo/Union Logo_341X350px.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 192px;
+		width: 50%;
+	}
+
+}
+
+
+@media screen and (max-width: 360px){
+
+	#tatshop_imgholder1{
+		background: url("../img/tattoo/Emerald Logo_509X350px.png");
+		background-size: cover;
+		height: 124px;
+		width: 50%;
+	}
+
+	#tatshop_imgholder2{
+		background: url("../img/tattoo/Union Logo_341X350px.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 185px;
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+
+	.logo-wrap{
+		width: 200px;
+	}
+
+	.logo-wrap img{
+		width: 180px;
+		height: 113.04px;
+	}
+
+	#circle-banner1{
+		border: 5px solid #000;
+		box-shadow: 6px 6px 6px 6px #fff;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		margin-left: 20%;
+		margin-top: 50%;
+	}
+
+	#about,
+	#portfolio,
+	#tattooshop,
+	#contacts,
+	#affiliations{
+		height: 85vh;
+	}
+	
+	#about-banner1{
+		height: 35vh;
+	}
+
+	#p_about{
+		text-align: justify;
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 0.7rem;
+		visibility: visible;
+	}
+
+	#about-banner1{
+		visibility: hidden;
+	}
+
+	.heading-ones{
+		letter-spacing: 3px;
+		font-size: 2rem;
+	}
+
+	#portf_imgholder1,
+	#portf_imgholder2,
+	#portf_imgholder3,
+	#portf_imgholder4,
+	#portf_imgholder5,
+	#seemore1{
+		height: 150px;
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	#tatshop_imgholder1{
+		background: url("../img/tattoo/Emerald Logo_509X350px.png");
+		background-size: cover;
+		height: 115px;
+		width: 50%;
+	}
+
+	#tatshop_imgholder2{
+		background: url("../img/tattoo/Union Logo_341X350px.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 164.75px;
+		width: 50%;
+	}
+
+	#cont_banner1,
+	#cont_banner2,
+	#cont_banner3{
+		float: left;
+		width: 30%;
+		height: 120px; 
+		margin: 0 0 0 8px;
+	}
+
+	#contacts{
+		height: 65vh;
+	}
+
+	.tats_anchor{
+		color: #fff;
+		font-size: 1rem;
+	}
+
+}
